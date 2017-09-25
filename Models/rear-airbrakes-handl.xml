@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+ <path>rear-airbrakes-handle.ac</path>
+
+    <animation>
+        <type>slider</type>
+  <object-name>rear-airbrakes-handl</object-name>
+        <visible>true</visible>
+        <drag-direction>vertical</drag-direction>
+        <action>
+            <button>0</button>
+            <repeatable>false</repeatable>
+            <binding>
+                <command>property-adjust</command>
+                <property>/controls/engines/engine/throttle</property>
+                <factor>0.05</factor>
+                <min>0</min>
+                <max>1</max>
+            </binding>
+        </action>
+        <hovered>
+            <binding>
+                <command>set-tooltip</command>
+                <tooltip-id>airbrake2</tooltip-id>
+                <label>%s</label>
+                <mapping>nasal</mapping>
+                <property>/controls/engines/engine/throttle</property>
+                <script>
+                    return sprintf("Speedbrake %d%% out", 100-arg[0]*100);
+                </script>
+            </binding>
+        </hovered>
+    </animation>
+ <animation>
+  <type>rotate</type>
+  <object-name>ab-handles-link-2</object-name>
+   <property>surface-positions/speedbrake-pos-norm</property>
+   <interpolation>
+     <entry>
+       <ind>0</ind>
+       <dep>0</dep>
+     </entry>
+     <entry>
+       <ind>0.02</ind>
+       <dep>5.0</dep>
+     </entry>
+     <entry>
+       <ind>1.0</ind>
+       <dep>45</dep>
+     </entry>
+      </interpolation>
+		<center>
+			<x-m>-0.042094</x-m>
+			<y-m>0.018549</y-m>
+			<z-m>0.116201</z-m>
+		</center>
+		<axis>
+			<x>0</x>
+			<y>-0.027171</y>
+			<z>0</z>
+		</axis>
+ </animation>
+
+</PropertyList>
+
+
