@@ -14,9 +14,9 @@ July 2013
 
 	<sim include="help.xml">
 
-		<description>Ask 13 (T4T-JSB)</description>
-		<author>Simon'bomber'Morley(FDM),Patrice Poly(3D)</author>
-		<status>early T4T Trial</status>
+		<description>Motorised ASK13</description>
+		<author>Simon'bomber'Morley(FDM),Patrice Poly(3D),Ellenor Malik(motor)</author>
+		<status>early T4T Trial, fictional</status>
                 <variant-of>ask13</variant-of>
 		<rating>
 			<FDM type="int">0</FDM>
@@ -32,10 +32,6 @@ July 2013
 		       <tag>1980s</tag>
 		       <tag>dual-controls</tag>
 		</tags>  
-
-		<user>
-			<callsign>Ok where's the engine ? And why does it have so little horsepower?</callsign>
-		</user>
    
 		<flight-model>jsb</flight-model>
 		<aero>ask13motor</aero>
